@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="./images.jpg">
-<html>
-  </head>
-  <body>
-    <div class="calculator-container">
-      <input type="text" id="display" disabled>
-      <br><br>
-      <div class="button-row">
-        <input type="button" value="1" onclick="display.value += '1'">
-        <input type="button" value="2" onclick="display.value += '2'">
-        <input type="button" value="3" onclick="display.value += '3'">
-        <input type="button" value="+" onclick="display.value += '+'">
-      </div>
-      <div class="button-row">
-        <input type="button" value="4" onclick="display.value += '4'">
-        <input type="button" value="5" onclick="display.value += '5'">
-        <input type="button" value="6" onclick="display.value += '6'">
-        <input type="button" value="-" onclick="display.value += '-'">
-      </div>
-      <div class="button-row">
-        <input type="button" value="7" onclick="display.value += '7'">
-        <input type="button" value="8" onclick="display.value += '8'">
-        <input type="button" value="9" onclick="display.value += '9'">
-        <input type="button" value="*" onclick="display.value += '*'">
-      </div>
-      <div class="button-row">
-        <input type="button" value="c" onclick="display.value = ''">
-        <input type="button" value="0" onclick="display.value += '0'">
-        <input type="button" value="=" onclick="display.value = eval(display.value)">
-        <input type="button" value="/" onclick="display.value += '/'">
-      </div>
+    <title>Calculadora2.0</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="conteudo">
+        <div class="calculadora">
+            <header class="opcoes__janela">
+                <div></div>
+                <div></div>
+                <div></div>
+            </header>
+            <main class="conteudo__botoes">
+                <input type="text" placeholder="0" class="js-resultado" />
+                <a class="botoes__iniciais js-btn-ac">AC</a>
+                <a class="botoes__iniciais js-btn-del">DEL</a>
+                <a class="botoes__iniciais js-btn-mais-menos">+/-</a>
+                <a class="js-btn-padroes" data-valor="/">÷</a>
+                <a class="js-btn-padroes" data-valor="7">7</a>
+                <a class="js-btn-padroes" data-valor="8">8</a>
+                <a class="js-btn-padroes" data-valor="9">9</a>
+                <a class="js-btn-padroes" data-valor="*">x</a>
+                <a class="js-btn-padroes" data-valor="4">4</a>
+                <a class="js-btn-padroes" data-valor="5">5</a>
+                <a class="js-btn-padroes" data-valor="6">6</a>
+                <a class="js-btn-padroes" data-valor="-">-</a>
+                <a class="js-btn-padroes" data-valor="1">1</a>
+                <a class="js-btn-padroes" data-valor="2">2</a>
+                <a class="js-btn-padroes" data-valor="3">3</a>
+                <a class="js-btn-padroes" data-valor="+">+</a>
+                <a class="js-btn-padroes grid-span-2 border-radius-left" data-valor="0">0</a>
+                <a class="js-btn-padroes" data-valor=".">.</a>
+                <a class="js-btn-igual border-radius-right">=</a>
+            </main>
+        </div>
     </div>
-  </body>
+    <script src="./script/script.js"></script>
+</body>
+
 </html>
